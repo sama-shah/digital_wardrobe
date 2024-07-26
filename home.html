@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div style="color:rgb(245, 194, 255); "><h2>&#128151; Sama's Wardrobe &#128151; </h2></div>
+    </div>
+
+    <div class="container">
+        <img id="thumbtack" src="thumbtack.png" alt="Thumbtack">
+        <div id="outfit-canvas"></div>
+        <div id="top-area"></div>
+        <div id="bottom-area"></div>
+        <div id="accessory-area-left"></div>
+        <div id="accessory-area-right"></div>
+        <div id="clothing-items">
+            <h2>&#128090; Tops</h2>
+            <div class="item-category">
+                <div class="scrollable-container" id="tops">
+                    <!-- <img src="heart_sweater.png" alt="Top 1" class="clothing-item" data-type="top"> -->
+                </div>
+            </div>
+            
+            <h2> &#128086; Bottoms</h2>
+            <div class="item-category">
+                <div class="scrollable-container" id="bottoms">
+                    <!-- <img src="blue_jeans.png" alt="Bottom 1" class="clothing-item" data-type="bottom"> -->
+                </div>
+            </div>
+            
+            <h2> &#128096; Accessories</h2>
+            <div class="item-category">
+                <div class="scrollable-container" id="accessories">
+                    <!-- <img src="bucket_hat.png" alt="Accessory 1" class="clothing-item" data-type="accessory"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="upload-button"><em>Upload to Wardrobe!</em></button>
+    <div id="upload-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Upload to Closet</h2>
+            <form id="upload-form">
+                <select id="item-type">
+                    <option value="top">Top</option>
+                    <option value="bottom">Bottom</option>
+                    <option value="accessory">Accessory</option>
+                </select>
+                <input type="file" id="image-upload" accept="image/*">
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </div>
+
+    <button id="reset-button"><em>Reset Outfit</em></button>
+    <script src="script.js"></script>
+</body>
+</html>
